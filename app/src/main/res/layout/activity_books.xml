@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/books"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Books"
+    android:background="@drawable/background_gradient_2"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control de Libros"
+        android:textSize="32sp"
+        android:textColor="@color/Grey"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/etProfileBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/Grey"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvDateTimeBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha: "
+        android:textSize="14sp"
+        android:textColor="@color/Grey"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etBookId"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="ID libro"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColorHint="@color/Grey"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etBookName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nombre del libro"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:textColorHint="@color/Grey"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etBookCost"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="$$$"
+        android:textColor="@color/white"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColorHint="@color/Grey"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="12dp"/>
+
+    <Spinner
+        android:id="@+id/spBookAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:spinnerMode="dropdown"
+        android:popupBackground="@color/Grey"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:dropDownWidth="match_parent"
+        android:background="@color/blue_light" />
+
+    <TextView
+        android:id="@+id/tvMessageBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/Grey"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="24dp">
+
+        <Button
+            android:id="@+id/btnBookSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/Grey"
+            android:background="@drawable/button"/>
+
+        <!-- Botón para agregar -->
+        <Button
+            android:id="@+id/btnBookAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/Grey"
+            android:background="@drawable/button"/>
+
+        <!-- Botón para editar -->
+        <Button
+            android:id="@+id/btnBookEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/Grey"
+            android:background="@drawable/button"/>
+
+        <!-- Botón para borrar -->
+        <Button
+            android:id="@+id/btnBookDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/Grey"
+            android:background="@drawable/button"/>
+    </LinearLayout>
+</LinearLayout>

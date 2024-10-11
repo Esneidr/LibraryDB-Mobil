@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regístrate"
+        android:textSize="30dp"
+        android:textColor="@color/Grey"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etNameRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nombre"
+        android:textColor="@color/Grey"
+        android:padding="12dp"
+        android:textColorHint="@color/Grey"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etemailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Correo"
+        android:textColor="@color/Grey"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColorHint="@color/Grey"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etpasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Contraseña"
+        android:textColor="@color/Grey"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColorHint="@color/Grey"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Registrarse"
+        android:textStyle="bold"
+        android:textColor="@color/Grey"
+        android:background="@drawable/button"/>
+
+</LinearLayout>

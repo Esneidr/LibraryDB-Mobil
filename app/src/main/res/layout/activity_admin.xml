@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin"
+    android:background="@drawable/background_gradient_2"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Library"
+        android:textSize="32sp"
+        android:textColor="@color/Grey"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvProfileAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/Grey"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvDateTimeAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha: "
+        android:textSize="14sp"
+        android:textColor="@color/Grey"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text="----------------------------------------------------------"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue_light"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/rectangle_2"/>
+
+    <TextView
+        android:id="@+id/tvAvailableBooksAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total libros: "
+        android:textSize="16sp"
+        android:textColor="@color/Grey"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text="----------------------------------------------------------"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue_light"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/rectangle_2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:paddingTop="24dp">
+
+        <Button
+            android:id="@+id/btnUsersAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuarios"
+            android:layout_marginEnd="10dp"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/Grey"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:id="@+id/btnBooksAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Libros"
+            android:layout_marginEnd="10dp"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/Grey"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:id="@+id/btnRentAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rentar"
+            android:layout_marginEnd="10dp"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/Grey"
+            android:background="@drawable/button"/>
+    </LinearLayout>
+
+</LinearLayout>

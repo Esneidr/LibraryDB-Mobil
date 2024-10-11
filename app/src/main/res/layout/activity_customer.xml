@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer"
+    android:background="@drawable/background_gradient_2"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control de Usuarios"
+        android:textSize="32sp"
+        android:textColor="@color/Grey"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvProfileUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/Grey"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvDateTimeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha: "
+        android:textSize="14sp"
+        android:textColor="@color/Grey"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etIdUser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="ID del Usuario"
+        android:textColor="@color/Grey"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColorHint="@color/Grey"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etNameUser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nombre Completo"
+        android:textColor="@color/Grey"
+        android:padding="12dp"
+        android:textColorHint="@color/Grey"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etemailUser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Ingrese el correo"
+        android:textColor="@color/Grey"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColorHint="@color/Grey"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etPasswordUser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Ingrese su contraseña"
+        android:textColor="@color/Grey"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColorHint="@color/Grey"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="12dp"/>
+
+    <Spinner
+        android:id="@+id/spStatusUser"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:spinnerMode="dropdown"
+        android:popupBackground="@color/Grey"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:dropDownWidth="match_parent"
+        android:background="@color/blue_light"/>
+
+    <TextView
+        android:id="@+id/tvMessageCostumer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/Grey"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:paddingTop="24dp">
+
+        <Button
+            android:id="@+id/btnSearchUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/Grey"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:id="@+id/btnAddUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/Grey"
+            android:background="@drawable/button" />
+
+        <Button
+            android:id="@+id/btnEditUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/Grey"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:id="@+id/btnDeletUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/Grey"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circule"
+        android:contentDescription="Logo de la aplicación"/>
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:textSize="28sp"
+        android:textColor="@color/Grey"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etNamelogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tu Nombre"
+        android:textColor="@color/Grey"
+        android:padding="12dp"
+        android:textColorHint="@color/Grey"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etPasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tu Contraseña"
+        android:textColor="@color/Grey"
+        android:background="@drawable/rectangle"
+        android:padding="12dp"
+        android:textColorHint="@color/Grey"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnSesionLogin"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Ingresar"
+        android:textStyle="bold"
+        android:textColor="@color/Grey"
+        android:background="@drawable/button"/>
+
+    <Button
+        android:id="@+id/btnRegisterLogin"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Registrarse"
+        android:textStyle="bold"
+        android:textColor="@color/Grey"
+        android:background="@drawable/button"/>
+
+</LinearLayout>
